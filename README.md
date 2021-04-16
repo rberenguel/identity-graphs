@@ -15,7 +15,7 @@ that you can find [here](https://github.com/rberenguel/WelcomeToApacheSpark).
 ---
 
 This presentation is formatted in Markdown and prepared to be used with
-[Deckset](https://www.decksetapp.com/). The drawings were done on an iPad Pro
+[Deckset](https://www.decksetapp.com/). The drawings were done on an iPad Mini 5
 using [Procreate](https://procreate.art).
 
 ---

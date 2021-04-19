@@ -322,7 +322,7 @@ footer: ![](images/hybrid.webp)
 # Basic solution
 - Coalesce (_merge on nulls_) chains based on *one id*
 - Is not as complete as the _graph approach_ because…
-- Requires one estable identifier
+- Requires one stable identifier
 
 ^ (Or stable enough identifier). This solution can be applied to batches of chains without requiring any lookback. The coalescing either kills other identifiers (and requires a stable identifier) or results in an overwrite of identifiers
 

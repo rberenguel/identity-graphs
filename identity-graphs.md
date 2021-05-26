@@ -2,15 +2,10 @@ footer: ![](images/hybrid.webp)
 [.footer-style: #2F2F2F, alignment(left), line-height(1), text-scale(3.5), z-index(10000)]
 
 ---
-<!---
+
 [.hide-footer]
 
 ![fit](images/dais-title.jpg)
-
--->
-
-## Keeping 
-## **Identity Graphs** In Sync With _Apache Spark_
 
 ^ ...
 
@@ -124,71 +119,61 @@ footer: ![](images/hybrid.webp)
 
 ---
 
-![fit](images/Cookie-1.webp)
-
-## **First** party
-
----
-
-![fit](images/Cookie-1.webp)
+![fit](images/Cookies-1.webp)
 
 ^ A user is browsing online
 
 ---
 
-![fit](images/Cookie-2.webp)
+![fit](images/Cookies-2.webp)
 
-^ Needs to log in
-
----
-
-![fit](images/Cookie-3.webp)
-
-^ To keep track of the user _state_ (logged in, if it's the right password) either server-side or page-side a cookie is set on the user (or more precisely, on a database the current browser handles)
+^ A _first party webserver_ is serving a webpage
 
 ---
 
-![fit](images/Cookie-4.webp)
+![fit](images/Cookies-3.webp)
+
+^ A __third party webserver_ is serving a _pixel_ on the page
+
+---
+
+![fit](images/Cookies-4.webp)
+
+^ This server sets a cookie on the user/browser combination
+
+---
+
+![fit](images/Cookies-5.webp)
 
 ^ Stamp!
 
 ---
 
-![fit](images/Cookie-5.webp)
+![fit](images/Cookies-6.webp)
 
-^ And this is a first party cookie
-
----
-
-^ This slide intentionally left blank
+^ When the user goes to the login area…
 
 ---
 
-![fit](images/Cookie-3rd-1.webp)
+![fit](images/Cookies-7.webp)
 
-## **Third** party
-
----
-
-![fit](images/Cookie-3rd-1.webp)
-
-^ The other situation, a user is browsing online
+^ The first party server keeps track of that _state_ by setting a cookie on the user/browser
 
 ---
 
-![fit](images/Cookie-3rd-2.webp)
+![fit](images/Cookies-8.webp)
 
-^ A _pixel_ is placed on that page, and when the page is visited triggers a call to a _third party server_, which sets a cookie
-
----
-
-![fit](images/Cookie-3rd-3.webp)
+^ Stamp!s
 
 ---
 
-![fit](images/Cookie-3rd-4.webp)
+![fit](images/Cookies-9.webp)
 
-^ This is a third-party cookie. It is third-party because it is not set by the domain being visited, but set on the user by a third party. Very important: cookies can only be read by whatever server (domain) set them
+^ Cookies are associated to the domain that set them, and they are not accessible from others. So, the first party server knows nothing about the third party cookie (and conversely)
+
+---
+
+![fit](images/Cookies-10.webp)
 
 ---
 
@@ -573,6 +558,16 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.build-lists: true]
+
+# Impact of moving **from an adhoc process to a graph process**
+
+- _**Partner integration**_: from **2 months** to **1 week**
+- _**Users mapped uplift**_: around **20%**
+- _**Mapping "quality"**_: competitive (within 5%) with industry leaders
+
+---
+
 |Part 3: **Speed up** and **improvements** |
 | --- |
 | _Data cleanup_ |
@@ -638,11 +633,15 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+![](images/dof-graph-3.webp)
+
 ### What is the **fastest way** to build a 2 billion nodes graph **daily**?　
 #### 　
 ### 🤔
 
 ---
+
+![](images/dof-graph-1.webp)
 
 ### _What is the **fastest** way to build a 　　　2 billion nodes graph **daily**?_
 
@@ -799,13 +798,11 @@ The repository is
 
 ---
 
-<!--
 [.hide-footer]
 
 ![fit](images/dais-feedback.jpg)
 
 ---
---->
 
 |**References**|
 | ---: |
@@ -838,6 +835,7 @@ The repository is
 
 | Reference | Image attribution |
 | ---: | :---: |
+| **Graphs** | [Ruben Berenguel](https://www.github.com/rberenguel/sketches)  😎 _(Generative art with **p5js**)_ |
 | **Bulb** | [Alessandro Bianchi](https://unsplash.com/@ale_s_bianchi) _(Unsplash)_  |
 | **Bubbles** | [Marko Blažević](https://unsplash.com/@kerber)  _(Unsplash)_  |
 | **Chair** | [Volodymyr Tokar](https://unsplash.com/@astrovol) _(Unsplash)_ |

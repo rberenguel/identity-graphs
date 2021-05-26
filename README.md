@@ -1,7 +1,7 @@
 # Keeping identity graphs in sync with Apache Spark
 
 Presentation I ([@berenguel](https://twitter.com/berenguel)) gave at the [Data Love Conference](https://datalove.konfy.care) on April 2021
-to explain how we manage a 2 billion node graph at [Hybrid Theory](https://www.hybridtheory.com). You can find the slides
+and May at the [Data+AI Summit](https://databricks.com/session_na21/keeping-identity-graphs-in-sync-with-apache-spark) to explain how we manage a 2 billion node graph at [Hybrid Theory](https://www.hybridtheory.com). You can find the slides
 [here](https://github.com/rberenguel/identity-graphs/releases/download/0.1.1/identity-graphs.pdf)
 (some images might look slightly blurry). I recommend you check the version with
 [presenter

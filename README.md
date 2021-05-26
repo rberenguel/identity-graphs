@@ -19,11 +19,22 @@ This presentation is formatted in Markdown and prepared to be used with
 using [Procreate](https://procreate.art).
 
 ---
+<div align="center">
 
-![](images/datalove.png)
+### Live at [Data+AI Summit](https://databricks.com/session_na21/keeping-identity-graphs-in-sync-with-apache-spark) (2021, May)
+
+
+  <img src="images/data-ai-summit.jpg" width="600"></img>
+
+### Live at [Data Love ❤️](https://datalove.konfy.care) (2021, April)
+
+
+  <img src="images/datalove.png" width="600"></img>
 
 ---
 
 <a href="https://www.buymeacoffee.com/rberenguel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="51" width="217"></a>
 
 ---
+
+</div>

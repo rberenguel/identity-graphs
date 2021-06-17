@@ -14,6 +14,12 @@ that you can find [here](https://github.com/rberenguel/WelcomeToApacheSpark).
 
 ---
 
+The video from Data Love is available [here](https://www.youtube.com/watch?v=xL8uFgXLEQY&list=PLBqWQH1MiwBS8f0PhhDeQuBVCjxC_i0X5&index=23). Don't miss the whole [playlist](https://www.youtube.com/playlist?list=PLBqWQH1MiwBS8f0PhhDeQuBVCjxC_i0X5) of videos of the conference.
+
+You can watch the recording from Data+AI Summit by registering to it and selecting "On Demand" [here](https://databricks.com/session_na21/keeping-identity-graphs-in-sync-with-apache-spark).
+
+---
+
 This presentation is formatted in Markdown and prepared to be used with
 [Deckset](https://www.decksetapp.com/). The drawings were done on an iPad Mini 5
 using [Procreate](https://procreate.art).

@@ -1,17 +1,19 @@
-footer: ![](images/hybrid.webp)
-[.footer-style: #2F2F2F, alignment(left), line-height(1), text-scale(3.5), z-index(10000)]
+footer: ![](images/dxd-logo.png)　　　　　　　　　　　　　　　　　　　　　　　![](images/hybrid.webp)
+[.footer-style: #2F2F2F, alignment(right), line-height(1), text-scale(3.5), z-index(10000)]
+
+[.hide-footer]
 
 ---
 
 [.hide-footer]
 
-![fit](images/dais-title.jpg)
+![fit](images/dxd-title.jpg)
 
 ^ ...
 
 ---
 
-[.footer: ![left](images/hybrid-red.webp)]
+[.hide-footer]
 
 ![](Images/RubenBerenguel.jpg)
 ![](Images/hybrid-vert.webp)
@@ -28,6 +30,13 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+![fit](images/dxd-summary.jpg)
+
+^ I have divided this presentation in 3 sections: first I will talk about adtech, cookies and the identity problem. Then I will explain how we can solve the problem using an identity graph, and finally how we can process this graph fast with Apache Spark
+
+---
+
+<!--
 |||
 | --- | :--- |
 |Part 1 | **Set up**|
@@ -35,9 +44,11 @@ footer: ![](images/hybrid.webp)
 |Part 3 | **Speed up** and **improvements**|
 |  |  |
 
-^ I have divided this presentation in 3 sections: first I will talk about adtech, cookies and the identity problem. Then I will explain how we can solve the problem using an identity graph, and finally how we can process this graph fast with Apache Spark
-
 ---
+
+-->
+
+[.hide-footer]
 
 | Part 1: **Set up** |
 | --- |
@@ -51,6 +62,7 @@ footer: ![](images/hybrid.webp)
 ---
 
 [.hide-footer]
+
 [.build-lists: true]
 
 ![left](images/newspapers.jpg)
@@ -68,6 +80,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 ![right](images/loupe.jpg)
 
 ## To find them we need
@@ -78,6 +92,8 @@ footer: ![](images/hybrid.webp)
 ### 　
 
 ---
+
+[.hide-footer]
 
 ![right](images/loupe.jpg)
 
@@ -108,6 +124,7 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
 ![right](images/party.jpg)
 
 ## There are _two kind_ of cookies
@@ -119,11 +136,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/hybrid.webp)]
+
 ![fit](images/Cookies-1.webp)
 
 ^ A user is browsing online
 
 ---
+
+[.footer: ![right](images/dxd.webp)]
 
 ![fit](images/Cookies-2.webp)
 
@@ -131,11 +152,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Cookies-3.webp)
 
 ^ A __third party webserver_ is serving a _pixel_ on the page
 
 ---
+
+[.footer: ![left](images/dxd.webp)]
 
 ![fit](images/Cookies-4.webp)
 
@@ -143,11 +168,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Cookies-5.webp)
 
 ^ Stamp!
 
 ---
+
+[.footer: ![left](images/dxd.webp)]
 
 ![fit](images/Cookies-6.webp)
 
@@ -155,11 +184,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Cookies-7.webp)
 
 ^ The first party server keeps track of that _state_ by setting a cookie on the user/browser
 
 ---
+
+[.footer: ![left](images/dxd.webp)]
 
 ![fit](images/Cookies-8.webp)
 
@@ -167,15 +200,21 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Cookies-9.webp)
 
 ^ Cookies are associated to the domain that set them, and they are not accessible from others. So, the first party server knows nothing about the third party cookie (and conversely)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Cookies-10.webp)
 
 ---
+
+[.hide-footer]
 
 ### We get **browse data** from users on the web from data providers[^A]
 ## 　
@@ -186,6 +225,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 ### _We get **browse data** from users in the web from data providers_
 ### We get **browse data** from users browsing our client website[^B]
 
@@ -194,6 +235,8 @@ footer: ![](images/hybrid.webp)
 ^ And data from what users do on our clients websites, which we handle with our third party 🍪
 
 ---
+
+[.hide-footer]
 
 ![left](images/socket.jpg)
 
@@ -207,6 +250,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 ![right](images/map.jpg)
 
 ## Mapping _servers_ 
@@ -217,11 +262,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/hybrid.webp)]
+ 
 ![fit](images/Mapping-1.webp)
 
 ^ In cookie mapping, a user is browsing
 
 ---
+
+[.footer: ![right](images/dxd.webp)]
 
 ![fit](images/Mapping-2.webp)
 
@@ -229,15 +278,19 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/hybrid.webp)]
+
 ![fit](images/Mapping-3.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Mapping-4.webp)
 
-
-
 ---
+
+[.footer: ![right](images/hybrid.webp)]
 
 ![fit](images/Mapping-5.webp)
 
@@ -245,16 +298,22 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Mapping-6.webp)
 
 ^ that sets a cookie
 
 ---
 
+[.footer: ![right](images/hybrid.webp)]
+
 ![fit](images/Mapping-7.webp)
 
 
 ---
+
+[.footer: ![right](images/dxd.webp)]
 
 ![fit](images/Mapping-8.webp)
 
@@ -262,23 +321,33 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Mapping-9.webp)
 
 ^ This can repeat any number of times (although less is better)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Mapping-10.webp)
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Mapping-11.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Mapping-12.webp)
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Mapping-13.webp)
 
@@ -302,6 +371,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 [.build-lists: true]
 
 # Basic solution
@@ -313,11 +384,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 ![fit](images/Connected-1.webp)
 
 ^ What do we do in this situation? Either `id 77` goes with circle or with gamma. Unless…
 
 ---
+
+[.hide-footer]
 
 |Part 2: **The identity graph** |
 | --- |
@@ -326,11 +401,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Break-chains-1.webp)
 
 ^ Recall the table with chains
 
 ---
+
+[.footer: ![right](images/hybrid.webp)]
 
 ![fit](images/Edges-1.webp)
 
@@ -338,11 +417,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Edges-2.webp)
 
 ^ Remove useless info
 
 ---
+
+[.footer: ![right](images/hybrid.webp)]
 
 ![fit](images/Edges-3.webp)
 
@@ -350,11 +433,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Edges-4.webp)
 
 ^ Ignore useless sources that add no information
 
 ---
+
+[.footer: ![right](images/hybrid.webp)]
 
 ![fit](images/Edges-5.webp)
 
@@ -362,11 +449,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Edges-6.webp)
 
 ^ And here
 
 ---
+
+[.footer: ![right](images/hybrid.webp)]
 
 ![fit](images/Edges-7.webp)
 
@@ -374,15 +465,20 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![right](images/dxd.webp)]
+
 ![fit](images/Edges-6.webp)
 
 ---
+
+[.footer: ![right](images/hybrid.webp)]
 
 ![fit](images/Edges-8.webp)
 
 ^ By looking for connected components you realise there are actually 2 users instead of 3. How do we find connected components with Spark?
 
 ---
+[.hide-footer]
 
 ## _Enter_ `GraphFrames`
 
@@ -419,6 +515,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 ## Alternatives considered…
 
 |||
@@ -430,6 +528,8 @@ footer: ![](images/hybrid.webp)
 ^ Except Giraphe, most options available are _graph databases_ and not _graph computation engines_. The difference is important for our problem: we want to find connected components, not query. Graph databases are optimised for querying (and offer custom languages for it, like Gremlin)
 
 ---
+
+[.hide-footer]
 
 ### Input should be formatted as a `DataFrame` of edges
 
@@ -444,6 +544,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 ![right](images/bubbles.jpg)
 
 ## **Connected components in big data**
@@ -453,11 +555,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/LS-SS-1.webp)
 
 ^ Start with a graph, directed or undirected
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/LS-SS-2.webp)
 
@@ -465,11 +571,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Large-Star-1.webp)
 
 ^ First start with the Large Star step. This step is done for the local neighborhood of each node. To make it clearer, let's point from _large_ to small first.
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Large-Star-2.webp)
 
@@ -477,11 +587,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Large-Star-3.webp)
 
 ^ It has two neighbors, 10 and 3. In this step, we connect all strictly larger neighbors (including _self_) to the minimum neighbor
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Large-Star-4.webp)
 
@@ -489,11 +603,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Large-Star-5.webp)
 
 ^ This is done to all nodes. You can imagine water flowing down the slopes. 3 doesn't go to 1 because it's smaller than 9 for example.
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Small-Star-1.webp)
 
@@ -501,11 +619,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Small-Star-2.webp)
 
 ^ This is again a node-local algorithm. Let's focus on node 9 
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Small-Star-3.webp)
 
@@ -513,11 +635,15 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Small-Star-4.webp)
 
 ^ In this case, we need to connect the _strictly smaller_ neighbors (including _self_) to the minimal neighbor. In this case, we connect 3 and 9 to 1.
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Small-Star-5.webp)
 
@@ -525,17 +651,23 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Iterate-1.webp)
 
 ^ Now we iterate, by applying Large Star again, which will link all neighbors of 3 (and 3) to 1.
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Iterate-2.webp)
 
 ^ And we end up with a star, where all nodes are connected to a node with minimal id. We use this id as the connected component id. The algorithm is \mathcal{O}(\log^2\text{number of nodes}), although in practice it is significantly faster, because convergence depends on the height (or diameter) of the worst component. It can have horrible _last reducer_ problems due to very large components in that case.
 
 ---
+
+[.hide-footer]
 
 # Output layout
 
@@ -548,6 +680,8 @@ footer: ![](images/hybrid.webp)
 
 ---
 
+[.hide-footer]
+
 [.build-lists: true]
 
 To map from _Partner A_ to _Partner B_
@@ -557,6 +691,8 @@ To map from _Partner A_ to _Partner B_
 - we find all the nodes of the form _Partner\_B\____*__ for the component above
 
 ---
+
+[.hide-footer]
 
 [.build-lists: true]
 
@@ -568,6 +704,8 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 |Part 3: **Speed up** and **improvements** |
 | --- |
 | _Data cleanup_ |
@@ -577,6 +715,8 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ![right](images/spray.jpg)
 
 # Data cleanup
@@ -585,11 +725,15 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ## **Invalid** identifiers
 
 ### 　
 
 ---
+
+[.hide-footer]
 
 ## _**Invalid** identifiers_
 
@@ -600,11 +744,15 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ## Node **pruning** 
 
 ### 　
 
 ---
+
+[.hide-footer]
 
 ## _Node **pruning**_
 
@@ -615,6 +763,7 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
 
 ## Component **destruction** 
 
@@ -623,6 +772,8 @@ To map from _Partner A_ to _Partner B_
 ^ 🤘
 
 ---
+
+[.hide-footer]
 
 ## _Component **destruction**_
 
@@ -633,6 +784,8 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ![](images/dof-graph-3.webp)
 
 ### What is the **fastest way** to build a 2 billion nodes graph **daily**?　
@@ -640,6 +793,8 @@ To map from _Partner A_ to _Partner B_
 ### 🤔
 
 ---
+
+[.hide-footer]
 
 ![](images/dof-graph-1.webp)
 
@@ -651,11 +806,15 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ![right](images/chair.jpg)
 
 # The _easy_ way
 
 ---
+
+[.footer: ![left](images/dxd.webp)]
 
 ![fit](images/Update-1.webp)
 
@@ -663,11 +822,15 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Update-2.webp)
 
 ^ And now we have two sets of stars, the existing ones and the new ones. But not all of them are alike
 
 ---
+
+[.footer: ![left](images/dxd.webp)]
 
 ![fit](images/Update-3.webp)
 
@@ -675,9 +838,13 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Update-4.webp)
 
 ---
+
+[.footer: ![left](images/dxd.webp)]
 
 ![fit](images/Update-5.webp)
 
@@ -685,21 +852,29 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.footer: ![left](images/hybrid.webp)]
+
 ![fit](images/Update-6.webp)
 
 ^ The clean ones are good to go, but for the tainted ones, we repeat the process of running large star - small star, with these new edges
 
 ---
 
+[.footer: ![left](images/dxd.webp)]
+
 ![fit](images/Update-7.webp)
 
 ---
+
+[.footer: ![left](images/hybrid.webp)]
 
 ![fit](images/Update-8.webp)
 
 ^ And we end up with a (very large) consolidated graph
 
 ---
+
+[.hide-footer]
 
 ![left](images/tuning.jpg)
 
@@ -709,6 +884,8 @@ To map from _Partner A_ to _Partner B_
 ^ In Apache Spark of course
 
 ---
+
+[.hide-footer]
 
 [.build-lists: true]
 
@@ -720,6 +897,8 @@ To map from _Partner A_ to _Partner B_
 
 
 ---
+
+[.hide-footer]
 
 [.build-lists: false]
 
@@ -735,6 +914,8 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 [.build-lists: false]
 
 ![left](images/tuning.jpg)
@@ -748,6 +929,8 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ![right](images/bulb.jpg)
 
 ## Impact of **A**daptive **Q**uery **E**xecution (AQE)
@@ -758,6 +941,8 @@ To map from _Partner A_ to _Partner B_
 ^ The CBO tries to re-arrange queries depending on cost statistics, but needs to have updated information on all the tables. AQE keeps these up to date as the computations flow, feeding the CBO with fresh data
 
 ---
+
+[.hide-footer]
 
 ![right](images/bulb.jpg)
 
@@ -770,6 +955,8 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 [.build-lists: true]
 
 # Further improvements
@@ -780,11 +967,15 @@ To map from _Partner A_ to _Partner B_
 
 ---
 
+[.hide-footer]
+
 ![](images/Gene.jpg)
 
 # __Thanks!__
 
 ---
+
+[.hide-footer]
 
 ![right fit](images/QR.png)
 
@@ -798,11 +989,11 @@ The repository is
 
 ---
 
-[.hide-footer]
-
-![fit](images/dais-feedback.jpg)
+![](images/dxd-resources.jpg)
 
 ---
+
+[.hide-footer]
 
 |**References**|
 | ---: |
@@ -821,6 +1012,8 @@ The repository is
 
 ---
 
+[.hide-footer]
+
 | **Related talks** |
 | ---: |
 | [Massive-Scale Entity Resolution Using the Power of Apache Spark and Graph](https://databricks.com/session/massive-scale-entity-resolution-using-the-power-of-apache-spark-and-graph) |
@@ -832,6 +1025,8 @@ The repository is
 | [Using GraphX/Pregel on Browsing History to Discover Purchase Intent](https://databricks.com/session/using-graphx-pregel-on-browsing-history-to-discover-purchase-intent) |
 
 ---
+
+[.hide-footer]
 
 | Reference | Image attribution |
 | ---: | :---: |
@@ -852,10 +1047,14 @@ The repository is
 
 ---
 
+[.hide-footer]
+
 | **Resources** |
 | --- |
 | [Unicode table](https://unicode-table.com) |
 
 ---
+
+[.hide-footer]
 
 `EOF`

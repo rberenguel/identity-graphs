@@ -1,4 +1,4 @@
-footer: ![](images/dxd-logo.png)　　　　　　　　　　　　　　　　　　　　　　　![](images/hybrid.webp)
+footer: ![](images/dxd.webp)　　　　　　　　　　　　　　　　　　　　　　　![](images/hybrid.webp)
 [.footer-style: #2F2F2F, alignment(right), line-height(1), text-scale(3.5), z-index(10000)]
 
 [.hide-footer]
@@ -531,21 +531,6 @@ footer: ![](images/dxd-logo.png)　　　　　　　　　　　　　　　　
 
 [.hide-footer]
 
-### Input should be formatted as a `DataFrame` of edges
-
-| src | dst | (…) |
-| --- | --- | --- |
-| _partner\_1\__**𝟷** | _partner\_2\__**⍺** | 1617963647… |
-| _partner\_1\__**2** | _partner\_3\__**⭘** | 1617963647… |
-| _partner\_2\__**𝛄** | _partner\_3\__**△** | 1617963654… |
-| ⁞ | ⁞ | ⁞ |
-
-^ We can additionally pass any information related with an edge (generically call it _label_), most useful would be the timestamp of the event.
-
----
-
-[.hide-footer]
-
 ![right](images/bubbles.jpg)
 
 ## **Connected components in big data**
@@ -667,6 +652,20 @@ footer: ![](images/dxd-logo.png)　　　　　　　　　　　　　　　　
 
 ---
 
+[.hide-footer]
+
+### Input should be formatted as a `DataFrame` of edges
+
+| src | dst | (…) |
+| --- | --- | --- |
+| _partner\_1\__**𝟷** | _partner\_2\__**⍺** | 1617963647… |
+| _partner\_1\__**2** | _partner\_3\__**⭘** | 1617963647… |
+| _partner\_2\__**𝛄** | _partner\_3\__**△** | 1617963654… |
+| ⁞ | ⁞ | ⁞ |
+
+^ We can additionally pass any information related with an edge (generically call it _label_), most useful would be the timestamp of the event.
+
+---
 [.hide-footer]
 
 # Output layout
